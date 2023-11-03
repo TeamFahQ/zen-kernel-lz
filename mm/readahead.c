@@ -134,6 +134,16 @@
 
 #include "internal.h"
 
+unsigned long vm_max_readahead = INITIAL_VM_MAX_READAHEAD;
+int sysctl_vm_max_readahead_handler(const struct ctl_table *table, int write,
+void __user *buffer, size_t *length, loff_t *ppos)
+{
+	proc_doulongvec_minmax(table, write, buffer, length, ppos);
+	noop_backing_dev_info.ra_pages =
+	vm_max_readahead >> (PAGE_SHIFT - 10);
+	return 0;
+}
+
 /*
  * Initialise a struct file's readahead state.  Assumes that the caller has
  * memset *ra to zero.
@@ -357,7 +367,7 @@ void force_page_cache_ra(struct readahead_control *ractl,
 	max_pages = max_t(unsigned long, bdi->io_pages, ra->ra_pages);
 	nr_to_read = min_t(unsigned long, nr_to_read, max_pages);
 	while (nr_to_read) {
-		unsigned long this_chunk = (2 * 1024 * 1024) / PAGE_SIZE;
+		unsigned long this_chunk = (2 * 4096 * 4096) / PAGE_SIZE;
 
 		if (this_chunk > nr_to_read)
 			this_chunk = nr_to_read;

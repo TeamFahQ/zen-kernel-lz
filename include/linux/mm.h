@@ -4213,6 +4213,13 @@ extern vm_fault_t filemap_map_pages(struct vm_fault *vmf,
 		pgoff_t start_pgoff, pgoff_t end_pgoff);
 extern vm_fault_t filemap_page_mkwrite(struct vm_fault *vmf);
 
+/* readahead.c */
+#define INITIAL_VM_MAX_READAHEAD  4096  /* kbytes */
+extern unsigned long vm_max_readahead;
+
+int sysctl_vm_max_readahead_handler(const struct ctl_table *table, int write,
+	void __user *buffer, size_t *length, loff_t *ppos);
+
 extern unsigned long stack_guard_gap;
 /* Generic expand stack which grows the stack according to GROWS{UP,DOWN} */
 int expand_stack_locked(struct vm_area_struct *vma, unsigned long address);
