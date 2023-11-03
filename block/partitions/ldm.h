@@ -61,7 +61,7 @@ struct parsed_partitions;
 #define COMP_RAID		0x03		/* Raid-set */
 
 /* Other constants. */
-#define LDM_DB_SIZE		2048		/* Size in sectors (= 1MiB). */
+#define LDM_DB_SIZE		4096		/* Size in sectors (= 1MiB). */
 
 #define OFF_PRIV1		6		/* Offset of the first privhead
 						   relative to the start of the

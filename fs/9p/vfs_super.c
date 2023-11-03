@@ -58,6 +58,7 @@ static int v9fs_fill_super(struct super_block *sb)
 	if (!v9ses->cache) {
 		sb->s_bdi->ra_pages = 0;
 		sb->s_bdi->io_pages = 0;
+ 		sb->s_bdi->ra_pages = (VM_MAX_READAHEAD * 4096)/PAGE_SIZE;
 	} else {
 		sb->s_bdi->ra_pages = v9ses->maxdata >> PAGE_SHIFT;
 		sb->s_bdi->io_pages = v9ses->maxdata >> PAGE_SHIFT;
