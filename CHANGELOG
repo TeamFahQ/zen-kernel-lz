@@ -1,0 +1,5 @@
+79a5cf765fdd Thomas Raines 2023-12-06 Add personal changelog
+f1eba13d52f8 Thomas Raines 2026-08-01 add localversion:-lz
+6c15e0d408b3 Thomas Raines 2023-11-03 LZ sysctl tweaks
+e4e47afa6e70 Thomas Raines 2026-06-25 Build nct6687 motherboard driver
+da957404f0dc Thomas Raines 2026-07-30 add nct6687 motherboard driver
