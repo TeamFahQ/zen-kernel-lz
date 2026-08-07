@@ -709,6 +709,9 @@ void requeue_task(struct task_struct *p, struct rq *rq, int flags)
 	struct list_head *node = &p->sq_node;
 	int deq_idx, idx, prio;
 
+	if (!rt_task(p))
+		flags &= ~ENQUEUE_HEAD;
+
 	TASK_SCHED_PRIO_IDX(p, rq, idx, prio);
 #ifdef ALT_SCHED_DEBUG
 	lockdep_assert_rq_held(rq);
@@ -5302,6 +5305,8 @@ void rt_mutex_setprio(struct task_struct *p, struct task_struct *pi_task)
 	trace_sched_pi_setprio(p, pi_task);
 
 	scoped_guard (sched_change, p, queue_flag) {
+		if (rt_prio(prio) && p->prio < prio)
+			scope->flags |= ENQUEUE_HEAD;
 		p->prio = prio;
 	}
 
