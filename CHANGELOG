@@ -1,4 +1,7 @@
-0dbb0b0049e4 Thomas Raines 2026-08-19 7.1.8-3
+b5253fae43c7 Thomas Raines 2026-08-20 7.1.9
+e441982784af Thomas Raines 2026-08-20 Merge branch '7.1/main' of https://github.com/zen-kernel/zen-kernel into 7.1/main
+d9ad0fa1966c Thomas Raines 2026-08-19 Update nct6687 driver
+147c07685240 Thomas Raines 2026-08-19 7.1.8-3
 5bf3b96e52b9 Thomas Raines 2026-08-18 Merge branch '7.1/main' of https://github.com/zen-kernel/zen-kernel into 7.1/main
 aa275901df4f Thomas Raines 2026-08-14 7.1.8-2
 5beb1b7c1290 Thomas Raines 2026-08-14 Merge branch '7.1/main' of https://github.com/zen-kernel/zen-kernel into 7.1/main
