@@ -1,4 +1,7 @@
-56b46470958d Thomas Raines 2026-08-26 7.1.10-3
+8535c5891f19 Thomas Raines 2026-08-29 7.1.11
+cfab3909059e Thomas Raines 2026-08-29 Merge branch '7.1/main' of github.com:TeamFahQ/zen-kernel-lz into 7.1/main
+ae99e16c2b1b Thomas Raines 2026-08-29 Something got messed up here. Adding nct6687 back
+392d717a855a Thomas Raines 2026-08-26 7.1.10-3
 2d6c29a1607c Thomas Raines 2026-08-26 Merge branch '7.1/main' of https://github.com/zen-kernel/zen-kernel into 7.1/main
 28d3c630ad73 Thomas Raines 2026-08-26 7.1.10-2
 bf3531ab92fc Thomas Raines 2026-08-25 Merge branch '7.1/main' of https://github.com/zen-kernel/zen-kernel into 7.1/main
