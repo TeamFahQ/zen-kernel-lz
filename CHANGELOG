@@ -1,5 +1,7 @@
-79a5cf765fdd Thomas Raines 2023-12-06 Add personal changelog
-f1eba13d52f8 Thomas Raines 2026-08-01 add localversion:-lz
-6c15e0d408b3 Thomas Raines 2023-11-03 LZ sysctl tweaks
-e4e47afa6e70 Thomas Raines 2026-06-25 Build nct6687 motherboard driver
-da957404f0dc Thomas Raines 2026-07-30 add nct6687 motherboard driver
+d0993761cb5a Thomas Raines 2026-09-16 7.2.6
+b0cebc8b29bf Thomas Raines 2026-09-16 Merge branch '7.2/main' of https://github.com/zen-kernel/zen-kernel into 7.2/main
+2b6e536f21b2 Thomas Raines 2026-09-16 Merge branch '7.2/main' of github.com:TeamFahQ/zen-kernel-lz into 7.2/main
+57a7cbcbd5a1 Thomas Raines 2026-09-15 Merge branch '7.2/main' of https://github.com/zen-kernel/zen-kernel into 7.2/main
+10c3d2b108d0 Thomas Raines 2023-12-06 Add personal changelog
+cfba91f26c5d Thomas Raines 2026-08-01 add localversion:-lz
+ae14d7001219 Thomas Raines 2023-11-03 LZ sysctl tweaks
