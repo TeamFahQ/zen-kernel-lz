@@ -1157,7 +1157,7 @@ config GENERIC_EARLY_IOREMAP
 config STACK_MAX_DEFAULT_SIZE_MB
 	int "Default maximum user stack size for 32-bit processes (MB)"
 	default 100
-	range 8 2048
+	range 8 4096
 	depends on STACK_GROWSUP && (!64BIT || COMPAT)
 	help
 	  This is the maximum stack size in Megabytes in the VM layout of 32-bit
