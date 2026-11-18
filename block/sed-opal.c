@@ -27,7 +27,7 @@
 
 #include "opal_proto.h"
 
-#define IO_BUFFER_LENGTH 2048
+#define IO_BUFFER_LENGTH 4096
 #define MAX_TOKS 64
 
 /* Number of bytes needed by cmd_finalize. */
@@ -2447,13 +2447,13 @@ static int read_table_data_cont(struct opal_dev *dev)
 }
 
 /*
- * IO_BUFFER_LENGTH = 2048
+ * IO_BUFFER_LENGTH = 4096
  * sizeof(header) = 56
  * No. of Token Bytes in the Response = 11
  * MAX size of data that can be carried in response buffer
- * at a time is : 2048 - (56 + 11) = 1981 = 0x7BD.
+ * at a time is : 4096 - (56 + 11) = 1981 = 0x7BD.
  */
-#define OPAL_MAX_READ_TABLE (0x7BD)
+#define OPAL_MAX_READ_TABLE (0xFBD)
 
 static int read_table_data(struct opal_dev *dev, void *data)
 {
