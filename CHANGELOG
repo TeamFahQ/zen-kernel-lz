@@ -1,4 +1,7 @@
-7d3b58e014cf Thomas Raines 2026-11-14 7.3.4
+05fab4ec2650 Thomas Raines 2026-11-21 7.3.5
+38e873dda455 Thomas Raines 2026-11-19 Merge branch '7.3/main' of https://github.com/zen-kernel/zen-kernel into 7.3/main
+75a04f18f5f0 Thomas Raines 2026-11-18 Merge branch '7.3/main' of github.com:TeamFahQ/zen-kernel-lz into 7.3/main
+6b1c95fa0d6a Thomas Raines 2026-11-14 7.3.4
 fbb8f675f5b1 Thomas Raines 2026-11-14 Merge branch '7.3/main' of https://github.com/zen-kernel/zen-kernel into 7.3/main
 0a16fa355438 Thomas Raines 2023-12-06 Add personal changelog
 a04e1c3950af Thomas Raines 2026-08-01 add localversion:-lz
